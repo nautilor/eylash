@@ -131,7 +131,7 @@
 &mt LGUI ESCAPE          &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &mt LCTRL TAB            &td0   &td1   &td2      &td3   &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &td4   &td5       &td6     &td7      &mt RGUI SQT
 &mt LEFT_SHIFT CAPSLOCK  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT CAPSLOCK
-                                       &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp SLASH
+                                       &kp LGUI  &mo 2  &lt 3 SPACE                                               &lt 3 ENTER  &mo 1  &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -140,10 +140,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&kp HOME        &kp END        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &msc SCRL_UP                                  &mmv MOVE_UP                     &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans  &trans     &trans  &kp DEL
+&kp PAGE_UP     &kp PAGE_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &msc SCRL_DOWN                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT           &kp DOWN         &kp UP  &kp RIGHT  &trans  &trans
+&kp LEFT_SHIFT  &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &kp C_MUTE                    &mmv MOVE_DOWN                   &kp K_MUTE         &trans           &trans  &trans     &trans  &trans
+                                             &kp NUMBER_0  &kp PERIOD    &kp COMMA                                                                      &kp INS            &kp DEL          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
