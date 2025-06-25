@@ -32,7 +32,79 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&kp LGUI>, <&kp A>;
+
+            tapping-term-ms = <150>;
+        };
+
+        td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>, <&kp S>;
+
+            tapping-term-ms = <150>;
+            label = "TD1";
+        };
+
+        td2: td2 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp LSHIFT>, <&kp D>;
+
+            tapping-term-ms = <150>;
+            label = "TD2";
+        };
+
+        td3: td3 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp LALT>, <&kp F>;
+
+            tapping-term-ms = <150>;
+            label = "TD3";
+        };
+
+        td4: td4 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp RALT>, <&kp J>;
+
+            tapping-term-ms = <150>;
+            label = "TD4";
+        };
+
+        td5: td5 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp RSHIFT>, <&kp K>;
+
+            tapping-term-ms = <150>;
+            label = "TD5";
+        };
+
+        td6: td6 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL>, <&kp L>;
+
+            tapping-term-ms = <150>;
+            label = "TD6";
+        };
+
+        td7: td7 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp RGUI>, <&kp LS(SEMICOLON)>;
+
+            tapping-term-ms = <150>;
+            label = "TD7";
         };
     };
 
@@ -56,15 +128,13 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&mt LGUI ESCAPE          &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&mt LCTRL TAB            &td0   &td1   &td2      &td3   &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &td4   &td5       &td6     &td7      &mt RGUI SQT
+&mt LEFT_SHIFT CAPSLOCK  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT CAPSLOCK
+                                       &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp SLASH
             >;
 
-             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-
-           
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
