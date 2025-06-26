@@ -196,3 +196,22 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [29, 30]
+  k: Ctl+Z
+- p: [30, 31]
+  k: Ctl+X
+- p: [31, 32]
+  k: Ctl+C
+- p: [32, 33]
+  k: Ctl+V
+- p: [14, 15]
+  k: $$mdi:keyboard-tab$$
+- p: [24, 25]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [1, 2]
+  k: $$mdi:keyboard-esc$$
+- p: [23, 24, 25]
+  k: $$mdi:pan-down$$
+- p: [15, 16, 17]
+  k: $$mdi:pan-up$$
