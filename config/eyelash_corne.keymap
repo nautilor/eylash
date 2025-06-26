@@ -52,6 +52,55 @@
         tap-ms = <100>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cz {
+            bindings = <&kp LC(Z)>;
+            key-positions = <29 30>;
+        };
+
+        cx {
+            bindings = <&kp LC(X)>;
+            key-positions = <30 31>;
+        };
+
+        cc {
+            bindings = <&kp LC(C)>;
+            key-positions = <31 32>;
+        };
+
+        cv {
+            bindings = <&kp LC(V)>;
+            key-positions = <32 33>;
+        };
+
+        tabc {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
+        };
+
+        enterc {
+            bindings = <&kp ENTER>;
+            key-positions = <24 25>;
+        };
+
+        escapec {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
+
+        scrolldownc {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <23 24 25>;
+        };
+
+        scrollupc {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <15 16 17>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
