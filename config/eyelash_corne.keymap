@@ -99,6 +99,11 @@
             bindings = <&msc SCRL_UP>;
             key-positions = <15 16 17>;
         };
+
+        delc {
+            bindings = <&kp DEL>;
+            key-positions = <11 12>;
+        };
     };
 
     keymap {
@@ -119,9 +124,9 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp GRAVE                &kp N7        &kp N8        &kp N9        &trans      &trans                                   &mmv MOVE_UP                     &kp HOME      &kp END       &kp PG_DN  &kp PG_UP  &msc SCRL_UP    &kp DEL
+&kp GRAVE                &kp N7        &kp N8        &kp N9        &trans      &trans                                   &mmv MOVE_UP                     &kp HOME      &kp END       &kp PG_DN  &kp PG_UP  &msc SCRL_UP    &kp BACKSPACE
 &mt LCTRL TAB            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans      &trans                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT      &kp DOWN      &kp UP     &kp RIGHT  &msc SCRL_DOWN  &kp BSLH
-&mt LEFT_SHIFT CAPSLOCK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans      &trans     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_VOL_DN  &kp C_VOL_UP  &trans     &trans     &trans          &trans
+&mt LEFT_SHIFT CAPSLOCK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans      &trans     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_VOL_DN  &kp C_VOL_UP  &trans     &trans     &trans          &kp DEL
                                                      &kp NUMBER_0  &kp PERIOD  &kp COMMA                                                                 &kp INS       &trans        &trans
             >;
 
