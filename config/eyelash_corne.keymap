@@ -151,7 +151,7 @@
 &studio_unlock  &kp F1      &kp F2      &kp F3      &kp F4  &kp F5                                  &mmv MOVE_UP                     &kp F6  &kp F7     &kp F8     &kp F9     &kp F10          &kp F11
 &bt BT_CLR_ALL  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans  &trans                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp PRINTSCREEN  &kp F12
 &trans          &trans      &trans      &trans      &trans  &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans     &trans     &trans     &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                        &trans      &trans  &to 4                                                                    &to 4   &trans     &trans
+                                        &trans      &trans  &mo 4                                                                    &mo 4   &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -159,10 +159,10 @@
 
         layer_4 {
             bindings = <
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans       &trans
-&trans           &trans           &trans           &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans
-&sys_reset       &bootloader      &trans           &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &bootloader  &sys_reset
-                                                   &trans  &trans  &trans                                    &trans  &trans  &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI                    &trans          &trans  &trans  &trans  &trans  &trans       &trans
+&trans           &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans
+&sys_reset       &bootloader      &trans           &trans           &trans           &trans           &trans            &trans          &trans  &trans  &trans  &trans  &bootloader  &sys_reset
+                                                   &trans           &trans           &trans                                             &trans  &trans  &trans
             >;
         };
     };
